@@ -1,137 +1,289 @@
-  
-@media screen and (max-width:376px) {
-    .flex{
-        display: flex;
-        gap: 4px;
-        align-items: center;
-    }
-    header {
-        background: #E6F2FE;
-        height: 60px;
-        /* align-items: center; */
-        padding: 16px 16px;
-        position: sticky;
-        top: 0;
-    }
-    .burger {
-        display: block;
-        font-size: 22px;
-        margin-bottom: 7px;
-        align-items: center;
-    }
-    section.hero {
-        padding: 16px 16px;
-        margin-top: 140px;
-        padding: 16px 16px;
-        position: relative;
-    }
-    h1 {
-        font-family: 'Roboto', sans-serif;
-        font-size: 44px;
-        line-height: 52px;
-        font-weight: 700;
-        color: #215273;
-    }
-    p {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 26px;
-        color: #215273;
-        white-space: normal;
-        margin-top: 24px;
-    }
-    .detail-content p {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 28px;
-        color: #215273;
-    }
-    .detail-content button {
-        padding: 12px 28px 12px 28px;
-        color: #215273;
-        background: #00DCA8;
-        border: 1px solid black;
-        border-radius: 6px;
-        height: 50px;
-        width: 212px;
-        margin-top: 40px;
-    }
-    .detail-content  .right-content {
-        position: absolute;
-        top: 52%;
-        left: 43%;
-    }
-    .detail-content  .right-content img {
-        width: 100%;
-    }
-
-    section.deatail {
-        padding: 16px 16px;
-        background: #B1D4F7;
-        margin-top: 95px;
-    }
-    .detail-content {
-        display: block;
-    }
-    .newIcon {
-        border-radius: 14px;
-        background: white;
-        width: 26px;
-        height: 24px;
-        text-align: center;
-        padding: 4px;
-    }
-    .dettailBox {
-        display: flex;
-        gap: 8px;
-        padding: 8px 0px;
-        /* font-size: 16px; */
-    }
-    .detail-content  .dettailBox span {
-        font-size: 16px;
+@media screen and (max-width: 376px) {
+  .flex {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+  header {
+    background: #e6f2fe;
+    height: 60px;
+    /* align-items: center; */
+    padding: 16px 16px;
+    position: sticky;
+    top: 0;
+  }
+  .burger {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 7px;
+    align-items: center;
+  }
+  section.hero {
+    padding: 16px 16px;
+    margin-top: 140px;
+    padding: 16px 16px;
+    position: relative;
+  }
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 44px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #215273;
+  }
+  p {
+    font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    }
-    .detail-content  .dettailBox  .dtl-btn {
-        width: 88px;
-        height: 36px;
-        background: #2285E7;
-        color: white;
-        padding: 10px 12px 10px 12px;
-        margin-bottom: 16px;
-        font-size: 12px;
-    }
-    .detail-content  .dettailBox  p{
-        white-space: nowrap;
-    }
-    section.product {
-        padding: 16px 16px;
-        margin: 30px 0;
-    }
-    h2{
-        text-align: center;
-    }
-    
-    .productBox {
-        width: 343px;
-        height: 325px;
-        display: flex;
-        align-items: center;
-        background: #E6F2FE;
-        margin-bottom: 22px;
-    }
-    h3 {
-        font-size: 26px;
-        line-height: 30px;
-        font-weight: 700;
-    }
-    .btnView{
-        display: block;
-        width: 118px;
-        height: 50px;
-        padding: 12px 28px 12px 28px;
-        margin: 0 auto;
-    }
-   
-   
+    color: #215273;
+    white-space: normal;
+    margin-top: 24px;
+  }
+  .detail-content p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #215273;
+  }
+  .detail-content button {
+    padding: 12px 28px 12px 28px;
+    color: #215273;
+    background: #00dca8;
+    border: 1px solid black;
+    border-radius: 6px;
+    height: 50px;
+    width: 212px;
+    margin-top: 40px;
+  }
+  .detail-content .right-content {
+    position: absolute;
+    top: 52%;
+    left: 43%;
+  }
+  .detail-content .right-content img {
+    width: 100%;
+  }
+
+  section.deatail {
+    padding: 16px 16px;
+    background: #b1d4f7;
+    margin-top: 95px;
+  }
+  .detail-content {
+    display: block;
+  }
+  .newIcon {
+    border-radius: 14px;
+    background: white;
+    width: 26px;
+    height: 24px;
+    text-align: center;
+    padding: 4px;
+  }
+  .dettailBox {
+    display: flex;
+    gap: 8px;
+    padding: 8px 0px;
+    /* font-size: 16px; */
+  }
+  .detail-content .dettailBox span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .detail-content .dettailBox .dtl-btn {
+    width: 88px;
+    height: 36px;
+    background: #2285e7;
+    color: white;
+    padding: 10px 12px 10px 12px;
+    margin-bottom: 16px;
+    font-size: 12px;
+  }
+  .detail-content .dettailBox p {
+    white-space: nowrap;
+  }
+  section.product {
+    padding: 16px 16px;
+    margin: 30px 0;
+  }
+  h2 {
+    text-align: center;
+  }
+
+  .productBox {
+    width: 343px;
+    height: 325px;
+    display: flex;
+    align-items: center;
+    background: #e6f2fe;
+    margin-bottom: 22px;
+  }
+  h3 {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+  .btnView {
+    display: block;
+    width: 118px;
+    height: 50px;
+    padding: 12px 28px 12px 28px;
+    margin: 0 auto;
+  }
+  section.services {
+    background-color: #e6f2fe;
+    padding: 16px 16px;
+    position: relative;
+  }
+
+  .services-content {
+    margin: 40px 0;
+  }
+  .servicesImg {
+    padding: 26px 0;
+  }
+
+  .servicesItems {
+    position: absolute;
+    cursor: pointer;
+    top: 150px;
+    left: 10px;
+    width: 144px;
+    height: 144px;
+    background: #00dca8;
+    text-decoration: underline;
+    color: #215273;
+    border-radius: 65%;
+    text-align: center;
+    padding: 50px 18px;
+  }
+
+  .servicesItems2 {
+    width: 104px;
+    height: 104px;
+    background: #00dca8;
+    text-decoration: underline;
+    color: #215273;
+    border-radius: 65%;
+    text-align: center;
+    padding: 36px 18px;
+    position: absolute;
+    top: 389px;
+    left: 15px;
+  }
+  .servicesItems3 {
+    width: 104px;
+    height: 104px;
+    background: #00dca8;
+    text-decoration: underline;
+    color: #215273;
+    border-radius: 65%;
+    text-align: center;
+    padding: 38px 18px;
+    position: absolute;
+    top: 249px;
+    left: 252px;
+  }
+  section.mainProduct {
+    padding: 16px 16px;
+    margin: 30px 0px;
+    position: relative;
+  }
+  .mainProduct-content {
+    margin: 30px 0;
+  }
+  .mainProductBox {
+    margin-bottom: 12px;
+  }
+  .mainProduct .mainProductTitile {
+    position: absolute;
+    top: 18%;
+    left: 36px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    /* margin-bottom: 12px; */
+  }
+
+  .mainProduct .mainProductTitile2 {
+    position: absolute;
+    top: 33%;
+    left: 36px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .mainProduct .mainProductTitile3 {
+    position: absolute;
+    top: 48%;
+    left: 36px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .mainProduct .mainProductTitile4 {
+    position: absolute;
+    top: 63%;
+    left: 36px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .mainProduct .mainProductTitile5 {
+    position: absolute;
+    top: 78%;
+    left: 36px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .mainProduct .btnShow {
+    width: 141px;
+    height: 50px;
+    line-height: 20px;
+    text-align: center;
+    padding: 12px 28px 12px 28px;
+    background-color: #00dca8;
+    margin-left: 100px;
+    margin-top: 10px;
+    border: 1px solid black;
+    font-weight: 700;
+  }
+  section.latest {
+    padding: 16px 16px;
+    width: 100%;
+    height: 100%;
+    min-width: 343px;
+    min-height: 100vh;
+    margin: 0 auto;
+  }
+  .latest-content {
+    background: #e6f2fe;
+    width: 343px;
+    height: 316px;
+    overflow: hidden;
+  }
+  .latestDetail {
+    padding: 12px 12px;
+  }
+  .swiper {
+    width: 300px;
+    height: 200px;
+  }
+  img.swiperImg {
+    width: 100%;
+    /* width: 343px; */
+    height: 200px;
+  }
+  .swiper .button-prev {
+    color: black;
+    position: absolute;
+    top: 30%;
+  }
+  .swiper .button-next {
+    color: black;
+    position: absolute;
+    top: 30%;
+  }
 }
