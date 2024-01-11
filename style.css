@@ -3,6 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+.main-nav .mainNav {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  background: #B1D4F7;
+  padding: 3px 32px;
+  height: 44px;
+  align-items: center;
+}
+li.mainNavItem {
+  list-style: none;
+}
 
 nav {
   display: flex;

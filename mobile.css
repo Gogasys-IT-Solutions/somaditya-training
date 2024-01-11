@@ -1,5 +1,42 @@
   
 @media screen and (max-width:376px) {
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 44px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #215273;
+}
+h2 {
+  color: #215273;
+  text-align: center;
+  white-space: pre-line;
+}
+h3 {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #215273;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #215273;
+  white-space: normal;
+  margin-top: 24px;
+}
+span {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  overflow-wrap: break-word;
+}
+
+  /* header section */
+  .main-nav {
+    display: none;
+}
   .flex{
       display: flex;
       gap: 4px;
@@ -8,7 +45,6 @@
   header {
       background: #E6F2FE;
       height: 60px;
-      /* align-items: center; */
       padding: 16px 16px;
       position: sticky;
       top: 0;
@@ -20,27 +56,24 @@
       margin-bottom: 7px;
       align-items: center;
   }
+  /* Hero section */
   section.hero {
-      padding: 16px 16px;
-      margin-top: 140px;
-      padding: 16px 16px;
-      position: relative;
-  }
-  h1 {
-      font-family: 'Roboto', sans-serif;
-      font-size: 44px;
-      line-height: 52px;
-      font-weight: 700;
-      color: #215273;
-  }
-  p {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 26px;
-      color: #215273;
-      white-space: normal;
-      margin-top: 24px;
-  }
+    padding: 16px 16px;
+    position: relative;
+    height: 100vh;
+    background: #E6F2FE;
+}
+ 
+  .hero-content {
+    margin-top: 75px;
+    background: #E6F2FE;
+}
+
+  /* Detail section */
+  section.deatail {
+    padding: 16px 16px;
+    background: #B1D4F7;
+}
   .detail-content p {
       font-size: 18px;
       font-weight: 700;
@@ -58,19 +91,15 @@
       margin-top: 40px;
   }
   .detail-content  .right-content {
-      position: absolute;
-      top: 52%;
-      left: 43%;
-  }
+    position: absolute;
+    top: 51%;
+    left: 43%;
+}
   .detail-content  .right-content img {
       width: 100%;
   }
 
-  section.deatail {
-      padding: 16px 16px;
-      background: #B1D4F7;
-      margin-top: 95px;
-  }
+ 
   .detail-content {
       display: block;
   }
@@ -86,13 +115,13 @@
       display: flex;
       gap: 8px;
       padding: 8px 0px;
-      /* font-size: 16px; */
   }
   .detail-content  .dettailBox span {
-      font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  }
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #215273;
+}
   .detail-content  .dettailBox  .dtl-btn {
       width: 88px;
       height: 36px;
@@ -105,17 +134,12 @@
   .detail-content  .dettailBox  p{
       white-space: nowrap;
   }
+  /*  Product Section*/
   section.product {
       padding: 16px 16px;
       margin: 30px 0;
   }
-  h2 {
-      text-align: center;
-      font-size: 32px;
-      color: #215273;
-      font-weight: 700;
-      padding: 0px 46px;
-  }
+
   
   .productBox {
       width: 343px;
@@ -124,8 +148,13 @@
       align-items: center;
       background: #E6F2FE;
       margin-bottom: 22px;
-      padding: 0 12px;
+      overflow: hidden;
+      padding: 12px 12px;
   }
+  .productBoxImg .customproductBoxImg {
+    width: 200px;
+    height: 324px;
+}
   h3 {
       font-size: 26px;
       line-height: 30px;
@@ -141,6 +170,8 @@
       color: #215273;
       border: 2px solid #215273;
   }
+
+  /* Services Section */
   section.services {
       background-color: #E6F2FE;
       padding: 16px 16px;
@@ -183,18 +214,19 @@
       left: 15px;
   }
   .servicesItems3 {
-      width: 104px;
-      height: 104px;
-      background: #00DCA8;
-      text-decoration: underline;
-      color: #215273;
-      border-radius: 65%;
-      text-align: center;
-      padding: 38px 18px;
-      position: absolute;
-      top: 249px;
-      left: 252px;
-  }
+    width: 120px;
+    height: 115px;
+    background: #00DCA8;
+    text-decoration: underline;
+    color: #215273;
+    border-radius: 65%;
+    text-align: center;
+    padding: 38px 18px;
+    position: absolute;
+    top: 226px;
+    left: 252px;
+}
+/* Main Section */
   section.mainProduct {
       padding: 16px 16px;
       margin: 30px 0px;
@@ -276,6 +308,7 @@
   .slider {
       padding: 16px 16px;
   }
+  
 .swiper {
   width: 345px;
   height: 345px;
@@ -315,11 +348,7 @@ img.swiperImg {
 .swiper-pagination {
   margin: -14px 0px;
 }
-span {
-  font-size: 18px;
-  font-weight: 700;
-  font-family: 'Roboto', sans-serif;
-}
+
 
 .policy {
   background-color: #E6F2FE;
@@ -466,7 +495,115 @@ b {
   font-weight: 700;
   color: #00DCA8;
 }
+.btnWatch{
+  width: 186px;
+  height: 50px;
+  padding:12px 28px 12px 28px;
+  border-radius: 6%;
+  background-color: #E6F2FE;
+  color: #215273;
+  border: 1px solid #215273;
+}
+.treatment .treatmentBox .treatmentDetail {
+  padding: 16px 20px 16px 20px;
+  background: #2285E7;
+  color: white;
+  text-align: center;
+  border-radius: 6%;
+  box-shadow: 0px 5px 10px 0px #1868B74D;
+  border: 1px solid;
+}
+.treatment{
+   padding: 16px 16px;
+   position: relative;
+}
 
+.treatmentImg {
+  background-image: url("Images/Group 20.png");
+  /* background-position: bottom; */
+  width: 50%;
+  height: 321px;
+  position: absolute;
+  left: 46%;
+  top: 55%;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+.btnAll {
+  padding: 12px 28px 12px 28px;
+  border: 1px solid #215273;
+  background-color: #E6F2FE;
 
+  border-radius: 6%;
+  margin-top: 35px;
+  width: 118px;
+  height: 50px;
+}
+.treatment-content {
+  margin: 38px 0px;
+}
+.treatmenthandImg {
+  position: absolute;
+  top: 72%;
+  left: 49%;
+  overflow: hidden;
+  bottom: 0;
+}
+.treatmentBox .treatmentDetail:hover:last-child{
+  background-color: green;
+}
+section.contect {
+  background: #215273;
+  padding: 70px 16px;
+}
+
+.conentDetail {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 32px;
+}
+.conentForm {
+  display: flex;
+  border: none;
+  height: 49px;
+  width: 343px;
+  margin: 0 auto;
+}
+input[type="email"] {
+  background: #215273;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+}
+.btnsign {
+  width: 113px;
+  height: 50px;
+  background: #00DCA8;
+  /* text-align: center; */
+  padding: 14px 2px 0px 32px;
+}
+.conentLogo,
+.conentDetail,
+.conentForm
+ {
+  margin-top: 23px;
+}
+footer.footer {
+  text-align: center;
+  padding: 53px 23px;
+  height: 118px;
+}
+.footer span{
+    color: #215273;
+}
+}
+.swiper  .button-pagination{
+  position: absolute;
+  bottom: 0;
+  top: 74%;
+  left: 48%;
+  height: 0;
 }
 
