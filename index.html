@@ -43,8 +43,14 @@
                 <div class="logo">
                     <img src="Images/Mobile/logo.png" alt="logo">
                 </div>
+                
                 <div class="navbar">
-                    <ul class="navList">
+                    <div class="burger-btn" onclick="toggleNavbar()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <ul class="navList" id="navList">
                         <li class="listItem">
                             <a href="#">Dental problems</a>
                         </li>
@@ -63,8 +69,6 @@
                         <li class="listItem">
                             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </li>
-
-
                     </ul>
                 </div>
                 <div class="Contry">
@@ -76,13 +80,6 @@
                         <option value="australia">Australia</option>
                         <!-- Add more countries as needed -->
                     </select>
-                </div>
-
-                <!-- <div class="searchbar">
-                <img src="Images/icons/Search.svg" alt="icons">
-            </div> -->
-                <div class="burger">
-                    &#9776;
                 </div>
 
             </nav>
@@ -131,7 +128,7 @@
                     <div><p>160+ Products tested</p></div>
                 </div>
                 <div class='dettailBox flex'>
-                    <p><b>We remain impartial </b> </p>
+                    <p>We remain impartial </p>
                     <button class="dtl-btn">Learn more</button>
                 </div>
             </div>
@@ -218,7 +215,7 @@
 
     <!-- MainProduct Section -->
     <section class="mainProduct">
-        <h2>Browse by <br> product type</h2>
+        <h2>Browse by  product type</h2>
         <div class="mainProduct-content">
             <div class="mainProductBox">
                 <img src="Images/Rectangle 7.png" alt="">
@@ -242,8 +239,7 @@
             </div>
             
         </div>
-        <div>
-
+        <div class="mainproduct-btn">
             <button class="btnShow">Show more</button>
         </div>
     </section>
@@ -252,8 +248,8 @@
     <section class="swiper mySwiper swiper2 ">
         <h2>Latest posts </h2>
         <p>Find the right products to care for your teeth </p>
-        <div class="swiper-wrapper latest-content  " style="margin-top: 30px;">
-            <div class=" swiper-slide">
+        <div class="swiper-wrapper wrapper-custom"  id="custom" style="margin-top: 30px;">
+            <div class="swiper-slide swiper-custom" >
                 <div class="latestImg">
                     <img class="swiperImg" src="Images/Image1.png" alt="">
                 </div>
@@ -263,7 +259,7 @@
                         cupis; quem pollicitus est</p>
                 </div>
             </div>
-            <div class=" swiper-slide">
+            <div class="swiper-slide swiper-custom">
                 <div class="latestImg">
                     <img class="swiperImg" src="Images/Image1.png" alt="">
                 </div>
@@ -273,9 +269,9 @@
                         cupis; quem pollicitus est</p>
                 </div>
             </div>
-            <div class=" swiper-slide">
+            <div class="swiper-slide swiper-custom">
                 <div class="latestImg">
-                    <img class="swiperImg" src="Images/Image.png" alt="">
+                    <img class="swiperImg" src="Images/Image1.png" width="100%" alt="">
                 </div>
                 <div class="latestDetail">
                     <span>Best electric toothbrush in 2022</span>
@@ -284,17 +280,68 @@
                 </div>
                 ...
             </div>
-            <!-- If we need navigation buttons -->
+
             <div class="swiper-button-prev button-prev"></div>
             <div class="swiper-button-next button-next "></div>
             <div class="swiper-pagination button-pagination custom-pagination " style="top: 75%;"></div>
         </div>
     </section>
 
+    <!-- <section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                   <div>
+                    <div class="latestImg">
+                        <img class="swiperImg" src="Images/Image1.png" alt="">
+                    </div>
+                    <div class="latestDetail">
+                        <span>Best electric toothbrush in 2022</span>
+                        <p>Post votum promissa memini cuius adeptione
+                            cupis; quem pollicitus est</p>
+                    </div>
+                   </div>
+              </div>
+              <div class="swiper-slide">
+                  <div>
+                    <div class="latestImg">
+                        <img class="swiperImg" src="Images/Image1.png" alt="">
+                    </div>
+                    <div class="latestDetail">
+                        <span>Best electric toothbrush in 2022</span>
+                        <p>Post votum promissa memini cuius adeptione
+                            cupis; quem pollicitus est</p>
+                    </div>  
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div>
+                    <div class="latestImg">
+                        <img class="swiperImg" src="Images/Image1.png" width="100%" alt="">
+                    </div>
+                    <div class="latestDetail">
+                        <span>Best electric toothbrush in 2022</span>
+                        <p>Post votum promissa memini cuius adeptione
+                            cupis; quem pollicitus est</p>
+                    </div>
+                  </div>
+              </div>
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section> -->
+
     <!-- Policy -->
     <section class="policy">
-        <h2>Honesty is thebest policy </h2>
-        <p>Here’s how we make sure our content remains truthful and transparent </p>
+        <div class="polictHeading">
+
+            <h2>Honesty is thebest policy </h2>
+            <p>Here’s how we make sure our content remains  truthful and transparent </p>
+                
+        </div>
         <div class="policy-content">
             <div class="policyBox">
                 <div class="policyImg"> <img src="Images/dental-care 1.png" alt=""></div>
@@ -309,9 +356,11 @@
                 <div class="policyImg"> <img src="Images/dentist 1.png" alt=""></div>
                 <div>
                     <span>Expert contributions </span>
-                    <p>We personally purchase every product and
-                        test it ourselves. We go to great lengths and expense to ensure we do not have to receive free
-                        samples from brands.</p>
+                    <p> We personally purchase every product and
+                        test it ourselves. We go to great lengths
+                        and expense to ensure we do not have to 
+                        receive free samples from brands.</p>
+                       
                 </div>
             </div>
             <div class="policyBox">
@@ -319,13 +368,15 @@
                 <div>
                     <span>Unbiased monetisation </span>
                     <p>We personally purchase every product and
-                        test it ourselves. We go to great lengths and expense to ensure we do not have to receive free
+                        test it ourselves. We go to great lengths
+                     and expense to ensure we do not have to receive free
                         samples from brands.</p>
                 </div>
             </div>
-            <div>
-                <button class="btnlearn">Learn More</button>
-            </div>
+    
+        </div>
+        <div class="policybtn">
+            <button class="btnlearn">Learn More</button>
         </div>
     </section>
 
@@ -333,48 +384,58 @@
     <section class="featured">
         <h2>Featured guides</h2>
         <div class="featured-content">
-            <div class="featuredBox">
-                <div class="featuredDetail">
-                    <span>Electric vs manual toothbrush </span>
-                    <p>
-                        Post votum promissa memini cuius adeptione cupis;
-                        quem pollicitus est aversione aversi et fuga. Qui autem de
-                    </p>
+            <div class="featuredleft">
+                <div class="featuredBox">
+                    <div class="featuredDetail">
+                        <span>Electric vs manual toothbrush </span>
+                        <p>
+                            Post votum promissa memini cuius adeptione cupis;
+                            quem pollicitus est aversione aversi et fuga. Qui autem de
+                        </p>
+                    </div>
+                    <div class="featuredImg">
+                        <img src="Images/Rectangle 11.png" alt="">
+                    </div>
                 </div>
-                <div class="featuredImg">
-                    <img src="Images/Rectangle 11.png" alt="">
-                </div>
+                
+                 <div class="featuredBox">
+                    <div class="featuredDetail">
+                        <span>Dental crowns </span>
+                        <p>
+                            Tanta petere igitur, ne sineres memini fieri etiam aliquam inclinationem ad consequendum minima. Instead, oportet omnino quieti de rebus dialecticis
+                        </p>
+                    </div>
+                    <div class="featuredImg">
+                        <img src="Images/red.png" alt="">
+                    </div>
+                 </div>
+           
+              
             </div>
-            <div class="featuredBox">
-                <div class="featuredDetail">
-                    <span>Electric vs manual toothbrush </span>
-                    <p>
-                        Post votum promissa memini cuius adeptione cupis;
-                        quem pollicitus est aversione aversi et fuga. Qui autem de
-                    </p>
-                </div>
-                <div class="featuredImg">
-                    <img src="Images/rec.png" alt="">
-                </div>
-            </div>
-            <div class="featuredBox">
-                <div class="featuredDetail">
-                    <span>Electric vs manual toothbrush </span>
-                    <p>
-                        Post votum promissa memini cuius adeptione cupis;
-                        quem pollicitus est aversione aversi et fuga. Qui autem de
-                    </p>
+            <div class="featuredRight">
+                <div class="featuredDetailright">
+                    <div class="featuredImgbackg">
+                        <!-- <img src="Images/backg.png" alt=""> -->
+                        <div class="featuredPar">
+                            <span>Dental implants </span>
+                            <p>
+                                Tollere odium autem in nostra potestate sint, ab omnibus et contra naturam transferre in nobis. Sed interim toto desiderio supprimunt: si vis aliqua quae in manu tua tibi necesse confundentur et quae, quod laudabile esset, nihil tamen possides.
+                            </p>
+                        </div>
+                    
                     <img class="featuredDetailLogo" src="Images/logo.png" alt="">
-                </div>
-                <div class="featuredImg">
-                    <img src="Images/backg.png" alt="">
-                    <div><img class="featuredImg" src="Images/rec1.png" alt=""></div>
+                   
+                        <div class="featuredTeeth">
+                            <img class="featuredImg" src="Images/rec1.png" alt="">
+                       
+                    </div>
                 </div>
             </div>
-            <div>
-                <button class="btnView">View</button>
-            </div>
+           
         </div>
+        
+    </div>
+        <button class="btnView">View</button>
     </section>
 
     <!-- slider2 -->
@@ -543,6 +604,11 @@
 </div>
     <!-- Script -->
     <script type="text/javascript">
+        
+        function toggleNavbar() {
+    var navList = document.getElementById("navList");
+    navList.classList.toggle("show");
+}
         const swiper = new Swiper('.swiper', {
             // Optional parameters
             direction: 'horizontal',
