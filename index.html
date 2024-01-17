@@ -11,597 +11,611 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
-<body>
-    <div class="container">
+<body>  
+    <div>
         <!-- Heaader section -->
-        <header>
-            <div class="main-nav">
-                <ul class="mainNav">
-                    <li class="mainNavItem">
-                        <h6>Join our YouTube community</h6>
-                    </li>
-                    <li class="mainNavItem">Over 500 product videos</li>
-                    <li class="mainNavItem">85 000 Subscribers</li>
-                    <li class="mainNavItem">85 000 Subscribers</li>
-                    <li class="mainNavItem">85 000 Subscribers</li>
-                </ul>
-                <div class="mainNavIcon">
-                    <h6>Watch our videos</h6>
-                    <i class="fa-solid fa2 fa-play"></i>
+        <header class="header">
 
-                </div>
-            </div>
-            <nav>
-                <div class="logo">
-                    <img src="Images/Mobile/logo.png" alt="logo">
-                </div>
-                
-                <div class="navbar">
-                    <div class="burger-btn" onclick="toggleNavbar()">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
+                <div class="top-header">
+                    <div class="container">
+                        <div class="main-nav">
+                            <ul class="mainNav">
+                                <li class="mainNavItem">
+                                    <h6>Join our YouTube community</h6>
+                                </li>
+                                <li class="mainNavItem">Over 500 product videos</li>
+                                <li class="mainNavItem">85 000 Subscribers</li>
+                                <li class="mainNavItem">85 000 Subscribers</li>
+                                <li class="mainNavItem">85 000 Subscribers</li>
+                            </ul>
+                            <div class="mainNavIcon">
+                                <h6>Watch our videos</h6>
+                                <i class="fa-solid fa2 fa-play"></i>
+            
+                            </div>
+                        </div>
                     </div>
-                    <ul class="navList" id="navList">
-                        <li class="listItem">
-                            <a href="#">Dental problems</a>
-                        </li>
-                        <li class="listItem">
-                            <a href="#">Best products</a>
-                        </li>
-                        <li class="listItem">
-                            <a href="#">Reviews</a>
-                        </li>
-                        <li class="listItem">
-                            <a href="#">Dental guides</a>
-                        </li>
-                        <li class="listItem">
-                            <a href="#">About</a>
-                        </li>
-                        <li class="listItem">
-                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        </li>
-                    </ul>
                 </div>
-                <div class="Contry">
-                    <label for="country"> Country</label>
-                    <select id="country" name="country">
-                        <option value="usa">USA</option>
-                        <option value="canada">Canada</option>
-                        <option value="uk">United Kingdom</option>
-                        <option value="australia">Australia</option>
-                        <!-- Add more countries as needed -->
-                    </select>
+                <div class="bottom-header">
+                    <div class="container">
+                        <nav>
+                            <div class="logo">
+                                <img src="Images/Mobile/logo.png" alt="logo">
+                            </div>
+                            
+                            <div class="navbar">
+                                <div class="burger-btn" onclick="toggleNavbar()">
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                </div>
+                                <ul class="navList" id="navList">
+                                    <li class="listItem">
+                                        <a href="#">Dental problems</a>
+                                    </li>
+                                    <li class="listItem">
+                                        <a href="#">Best products</a>
+                                    </li>
+                                    <li class="listItem">
+                                        <a href="#">Reviews</a>
+                                    </li>
+                                    <li class="listItem">
+                                        <a href="#">Dental guides</a>
+                                    </li>
+                                    <li class="listItem">
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li class="listItem">
+                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="Contry">
+                                <label for="country"> Country</label>
+                                <select id="country" name="country">
+                                    <option value="usa">USA</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="australia">Australia</option>
+                                    <!-- Add more countries as needed -->
+                                </select>
+                            </div>
+            
+                        </nav>
+                    </div>
                 </div>
-
-            </nav>
         </header>
+        
         <!-- Hero Section -->
         <section class="hero">
-            <div class="hero-content">
-                <div class="hero-leftDiv">
-                    <h1>Kick start your <br> dental health</h1>
-                    <p>We hand-test all the products to help you make the right choice when it
-                        comes to keeping your teeth clean and healthy. Whether you’re choosing
-                        an electric toothbrush, a water flosser, dental accessory or if you just
-                        need guidance on how to use these products, we’re confident we can help.
-                    </p>
-                    <div class="hero-detail">
-                        <p>
-                            Find the best dental products  <span>hand-tested</span> by us
-                           
+            <div class="container">
+
+                <div class="hero-content">
+                    <div class="hero-leftDiv">
+                        <h1>Kick start your <br> dental health</h1>
+                        <p>We hand-test all the products to help you make the right choice when it
+                            comes to keeping your teeth clean and healthy. Whether you’re choosing
+                            an electric toothbrush, a water flosser, dental accessory or if you just
+                            need guidance on how to use these products, we’re confident we can help.
                         </p>
-                        <button>Best dental products </button>
+                        <div class="hero-detail">
+                            <p>
+                                Find the best dental products  <span>hand-tested</span> by us
+                               
+                            </p>
+                            <button>Best dental products </button>
+                        </div>
                     </div>
-                </div>
-                <div class="hero-RightDiv">
-                    <div class="right-content">
-                        <img src="Images/Brush.png" alt="brush">
-    
+                    <div class="hero-RightDiv">
+                        <div class="right-content">
+                            <img src="Images/Brush.png" alt="brush">
+        
+                        </div>
                     </div>
                 </div>
             </div>
-           
-
         </section>
+
         <!-- Detail Section -->
         <section class="deatail">
-            <div class="detail-content">
-                <div class='dettailBox'>
-                    <div class="detailIcon"><i class="fa-solid fa-check newIcon"></i></div>
-                    <div><p>160+ Products tested</p></div>
-                </div>
-                <div class='dettailBox'>
-                    <div class="detailIcon"><i class="fa-solid fa-check newIcon"></i></div>
-                    <div><p>160+ Products tested</p></div>
-                </div>
-                <div class='dettailBox'>
-                    <div class="detailIcon"><i class="fa-solid fa-check newIcon"></i></div>
-                    <div><p>160+ Products tested</p></div>
-                </div>
-                <div class='dettailBox flex'>
-                    <p>We remain impartial </p>
-                    <button class="dtl-btn">Learn more</button>
+            <div class="container">
+                <div class="detail-content">
+                    <div class='dettailBox'>
+                        <div class="detailIcon"><i class="fa-solid fa-check newIcon"></i></div>
+                        <div><p>160+ Products tested</p></div>
+                    </div>
+                    <div class='dettailBox'>
+                        <div class="detailIcon"><i class="fa-solid fa-check newIcon"></i></div>
+                        <div><p>160+ Products tested</p></div>
+                    </div>
+                    <div class='dettailBox'>
+                        <div class="detailIcon"><i class="fa-solid fa-check newIcon"></i></div>
+                        <div><p>160+ Products tested</p></div>
+                    </div>
+                    <div class='dettailBox flex'>
+                        <p>We remain impartial </p>
+                        <button class="dtl-btn">Learn more</button>
+                    </div>
                 </div>
             </div>
         </section>
+
         <!-- Product Section -->
         <section class="product">
-            <div class="productTitle">
+            <div class="container">
 
-                <h2>Most popular</h2>
-                <p>See what others are using to care for their teeth</p>
-            </div>
-            <div class="product-content">
-                <div class="productLeft">
-                          <div class="productheading">
-  
-                              <h3>10 best teeth whitening products </h3>
-                              <p>Quod Enchiridion Epictetus stoici scripsit. Rodrigo Abela et</p>
-                          </div>
-                          <div class="productLeftImg">
-                              <img class="customproductBoxImg" src="Images/Rectangle 3.png" alt="img">
-                          </div>
-                        
-              
+                <div class="productTitle">
+    
+                    <h2>Most popular</h2>
+                    <p>See what others are using to care for their teeth</p>
+                </div>
+                <div class="product-content">
+                    <div class="productLeft">
+                              <div class="productheading">
+                                  <h3>10 best teeth whitening products </h3>
+                                  <p>Quod Enchiridion Epictetus stoici scripsit. Rodrigo Abela et</p>
+                              </div>
+                    </div>
+    
+                    <div class="productRight">
+                        <div class="productBox">
+                            <div class="productDetail">
+        
+                                <h3>Best toothbrush 2022 </h3>
+                                <p>Quod Enchiridion Epictetus stoici scripsit. Rodrigo Abela et</p>
+                            </div>
+                            <div class="productBoxImg">
+                                <img src="Images/Rectangle 4.png" alt="img">
+                            </div>
+                        </div>
+        
+                        <div class="productBox">
+                            <div class="productDetail">
+        
+                                <h3>Best mouthwash</h3>
+                                <p>Quod Enchiridion Epictetus stoici scripsit. Rodrigo Abela et</p>
+                            </div>
+                            <div class="productBoxImg">
+                                <img src="Images/Rectangle 4.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
                     
+    
                 </div>
-
-                <div class="productRight">
-                    <div class="productBox">
-                        <div class="productDetail">
-    
-                            <h3>Best toothbrush 2022 </h3>
-                            <p>Quod Enchiridion Epictetus stoici scripsit. Rodrigo Abela et</p>
-                        </div>
-                        <div class="productBoxImg">
-                            <img src="Images/Rectangle 4.png" alt="img">
-                        </div>
-                    </div>
-    
-                    <div class="productBox">
-                        <div class="productDetail">
-    
-                            <h3>Best mouthwash</h3>
-                            <p>Quod Enchiridion Epictetus stoici scripsit. Rodrigo Abela et</p>
-                        </div>
-                        <div class="productBoxImg">
-                            <img src="Images/Rectangle 4.png" alt="img">
-                        </div>
-                    </div>
+                <div>
+                    <button class="btnView">View</button>
                 </div>
-                
-
             </div>
-            <div>
-                <button class="btnView">View</button>
-            </div>
-    
     </section>
+
     <!-- Services Section -->
     <section class="services">
-        <div class="servicesTitle">
-
-            <h2>Tools and advice
-                to help you choose</h2>
-            <p>Not sure where to start? We can help with that!</p>
-        </div>
-        <div class="services-content">
-            <div class="servicesImg">
-                <img src="Images/Image.png" alt="">
+            <div class="servicesTitle">
+    
+                <h2>Tools and advice
+                    to help you choose</h2>
+                <p>Not sure where to start? We can help with that!</p>
             </div>
-            <div class="servicesDetail ">
-                <div class="servicesItems green">
-                    <span>Dental healthon on a budget</span>
+            <div class="services-content">
+                <div class="servicesImg">
+                    <img src="Images/Image.png" alt="">
                 </div>
-                <div class="servicesItems2 green">
-                    <span>Product selector</span>
-                </div>
-                <div class="servicesItems3 green">
-
-                    <span>What not to buy</span>
+                <div class="servicesDetail ">
+                    <div class="servicesItems green">
+                        <span>Dental healthon on a budget</span>
+                    </div>
+                    <div class="servicesItems2 green">
+                        <span>Product selector</span>
+                    </div>
+                    <div class="servicesItems3 green">
+    
+                        <span>What not to buy</span>
+                    </div>
                 </div>
             </div>
-        </div>
+       
     </section>
 
     <!-- MainProduct Section -->
     <section class="mainProduct">
-        <h2>Browse by  product type</h2>
-        <div class="mainProduct-content">
-            <div class="mainProductBox">
-                <img src="Images/Rectangle 7.png" alt="">
-                <span class="mainProductTitile">Toothbrush</span>
+        <div class="container">
+
+            <h2>Browse by product type</h2>
+            <div class="mainProduct-content">
+                <div class="mainProductBox">
+                    <img src="Images/Rectangle 7.png" alt="">
+                    <span class="mainProductTitile">Toothbrush</span>
+                </div>
+                <div class="mainProductBox">
+                    <img src="Images/red.png" alt="">
+                    <span class="mainProductTitile2">Water flosser</span>
+                </div>
+                <div class="mainProductBox">
+                    <img src="Images/Rectangle 8.png" alt="">
+                    <span class="mainProductTitile3">Toothpaste</span>
+                </div>
+                <div class="mainProductBox">
+                    <img src="Images/Rectangle 9.png" alt="">
+                    <span class="mainProductTitile4">Eco-friendly</span>
+                </div>
+                <div class="mainProductBox">
+                    <img src="Images/Rectangle 10.png" alt="">
+                    <span class="mainProductTitile5">Flossing tools</span>
+                </div>
             </div>
-            <div class="mainProductBox">
-                <img src="Images/red.png " alt="">
-                <span class="mainProductTitile2">Water flosser</span>
+            <div class="mainproduct-btn">
+                <button class="btnShow">Show more</button>
             </div>
-            <div class="mainProductBox">
-                <img src="Images/Rectangle 8.png" alt="">
-                <span class="mainProductTitile3">Toothpaste</span>
+        </div>
+    </section>
+
+<!-- Lastest Section -->
+    <section class="Latest">
+
+        <div class="container">
+            <div class="latest-title">
+                <h2>Latest posts</h2>
+                <p>Find the right products to care for your teeth </p>
             </div>
-            <div class="mainProductBox">
-                <img src="Images/Rectangle 9.png" alt="">
-                <span class="mainProductTitile4">Eco-friendly</span>
+            
+          <div class="LatestPosts carousel-1 owl-carousel  owl-theme">
+            <div class="card">
+              <img src="Images/Image1.png" alt=" Image 1">
+              <div class="card-content">
+                <span class="card-title">Best electric toothbrush in 2022</span>
+                <p>This is the content of card 1. It could contain any information you want to display.</p>
+              </div>
             </div>
-            <div class="mainProductBox">
-                <img src="Images/Rectangle 10.png" alt="">
-                <span class="mainProductTitile5">Flossing tools</span>
+    
+            <div class="card">
+                <img src="Images/Image1.png" alt=" Image 1">
+                <div class="card-content">
+                  <span class="card-title">Best electric toothbrush in 2022</span>
+                  <p>This is the content of card 1. It could contain any information you want to display.</p>
+                </div>
+              </div>
+          
+            <div class="card">
+                <img src="Images/Image1.png"alt="Card Image 1">
+                <div class="card-content">
+                  <span class="card-title">Best electric toothbrush in 2022</span>
+                  <p>This is the content of card 1. It could contain any information you want to display.</p>
+                </div>
+              </div>
+          
+              <div class="card">
+                <img src="Images/Image1.png" alt=" Image 3">
+                <div class="card-content">
+                  <span class="card-title">Best electric toothbrush in 2022</span>
+                  <p>This is the content of card 1. It could contain any information you want to display.</p>
+                </div>
+              </div>
+    
+              <div class="card">
+                <img src="Images/Image1.png" alt=" Image 3">
+                <div class="card-content">
+                  <span class="card-title">Best electric toothbrush in 2022</span>
+                  <p>This is the content of card 1. It could contain any information you want to display.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </section>
+   
+    <!-- Policy Section -->
+    <section class="policy">
+
+        <div class="container">
+
+            <div class="polictHeading">
+    
+                <h2>Honesty is thebest policy </h2>
+                <p>Here’s how we make sure our content remains  truthful and transparent </p>
+                    
+            </div>
+            <div class="policy-content">
+                <div class="policyBox">
+                    <div class="policyImg"> <img src="Images/dental-care 1.png" alt=""></div>
+                    <div>
+                        <span>Genuine hands on testing </span>
+                        <p>We personally purchase every product and
+                            test it ourselves. We go to great lengths and expense to ensure we do not have to receive free
+                            samples from brands.</p>
+                    </div>
+                </div>
+                <div class="policyBox">
+                    <div class="policyImg"> <img src="Images/dentist 1.png" alt=""></div>
+                    <div>
+                        <span>Expert contributions </span>
+                        <p> We personally purchase every product and
+                            test it ourselves. We go to great lengths
+                            and expense to ensure we do not have to 
+                            receive free samples from brands.</p>
+                           
+                    </div>
+                </div>
+                <div class="policyBox">
+                    <div class="policyImg"> <img src="Images/dollar 1.png" alt=""></div>
+                    <div>
+                        <span>Unbiased monetisation </span>
+                        <p>We personally purchase every product and
+                            test it ourselves. We go to great lengths
+                         and expense to ensure we do not have to receive free
+                            samples from brands.</p>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="policybtn">
+                <button class="btnlearn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured guides Section  -->
+    <section class="featured">
+        <div class="container">
+
+            <h2>Featured guides</h2>
+            <div class="featured-content">
+                <div class="featuredleft">
+                    <div class="featuredBox">
+                        <div class="featuredDetail">
+                            <span>Electric vs manual toothbrush </span>
+                            <p>
+                                Post votum promissa memini cuius adeptione cupis;
+                                quem pollicitus est aversione aversi et fuga. Qui autem de
+                            </p>
+                        </div>
+                        <div class="featuredImg">
+                            <img src="Images/Rectangle 11.png" alt="">
+                        </div>
+                    </div>
+                    
+                     <div class="featuredBox">
+                        <div class="featuredDetail">
+                            <span>Dental crowns </span>
+                            <p>
+                                Tanta petere igitur, ne sineres memini fieri etiam aliquam inclinationem ad consequendum minima. Instead, oportet omnino quieti de rebus dialecticis
+                            </p>
+                        </div>
+                        <div class="featuredImg">
+                            <img src="Images/red.png" alt="">
+                        </div>
+                     </div>
+               
+                  
+                </div>
+                <div class="featuredRight">
+                        <div class="featuredDetailright">
+                            <div class="featuredImgbackg">
+                                <div class="featuredPar">
+                                    <span>Dental implants </span>
+                                    <p>
+                                        Tollere odium autem in nostra potestate sint, ab omnibus et contra naturam transferre in nobis. Sed interim toto desiderio supprimunt: si vis aliqua quae in manu tua tibi necesse confundentur et quae, quod laudabile esset, nihil tamen possides.
+                                    </p>
+                                </div>
+                            
+                            <img class="featuredDetailLogo" src="Images/logo.png" alt="">
+                           
+                                
+                        </div>
+                    </div>
+                    </div>
+               
             </div>
             
         </div>
-        <div class="mainproduct-btn">
-            <button class="btnShow">Show more</button>
+            <button class="btnView">View</button>
         </div>
     </section>
 
-    <!-- Swiper Section -->
-    <section class="swiper mySwiper swiper2 ">
-        <h2>Latest posts </h2>
-        <p>Find the right products to care for your teeth </p>
-        <div class="swiper-wrapper wrapper-custom"  id="custom" style="margin-top: 30px;">
-            <div class="swiper-slide swiper-custom" >
-                <div class="latestImg">
-                    <img class="swiperImg" src="Images/Image1.png" alt="">
-                </div>
-                <div class="latestDetail">
-                    <span>Best electric toothbrush in 2022</span>
-                    <p>Post votum promissa memini cuius adeptione
-                        cupis; quem pollicitus est</p>
-                </div>
-            </div>
-            <div class="swiper-slide swiper-custom">
-                <div class="latestImg">
-                    <img class="swiperImg" src="Images/Image1.png" alt="">
-                </div>
-                <div class="latestDetail">
-                    <span>Best electric toothbrush in 2022</span>
-                    <p>Post votum promissa memini cuius adeptione
-                        cupis; quem pollicitus est</p>
-                </div>
-            </div>
-            <div class="swiper-slide swiper-custom">
-                <div class="latestImg">
-                    <img class="swiperImg" src="Images/Image1.png" width="100%" alt="">
-                </div>
-                <div class="latestDetail">
-                    <span>Best electric toothbrush in 2022</span>
-                    <p>Post votum promissa memini cuius adeptione
-                        cupis; quem pollicitus est</p>
-                </div>
-                ...
-            </div>
-
-            <div class="swiper-button-prev button-prev"></div>
-            <div class="swiper-button-next button-next "></div>
-            <div class="swiper-pagination button-pagination custom-pagination " style="top: 75%;"></div>
-        </div>
-    </section>
-
-    <!-- <section>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                   <div>
-                    <div class="latestImg">
-                        <img class="swiperImg" src="Images/Image1.png" alt="">
-                    </div>
-                    <div class="latestDetail">
-                        <span>Best electric toothbrush in 2022</span>
-                        <p>Post votum promissa memini cuius adeptione
-                            cupis; quem pollicitus est</p>
-                    </div>
-                   </div>
-              </div>
-              <div class="swiper-slide">
-                  <div>
-                    <div class="latestImg">
-                        <img class="swiperImg" src="Images/Image1.png" alt="">
-                    </div>
-                    <div class="latestDetail">
-                        <span>Best electric toothbrush in 2022</span>
-                        <p>Post votum promissa memini cuius adeptione
-                            cupis; quem pollicitus est</p>
-                    </div>  
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                  <div>
-                    <div class="latestImg">
-                        <img class="swiperImg" src="Images/Image1.png" width="100%" alt="">
-                    </div>
-                    <div class="latestDetail">
-                        <span>Best electric toothbrush in 2022</span>
-                        <p>Post votum promissa memini cuius adeptione
-                            cupis; quem pollicitus est</p>
-                    </div>
-                  </div>
-              </div>
-              
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-    </section> -->
-
-    <!-- Policy -->
-    <section class="policy">
-        <div class="polictHeading">
-
-            <h2>Honesty is thebest policy </h2>
-            <p>Here’s how we make sure our content remains  truthful and transparent </p>
-                
-        </div>
-        <div class="policy-content">
-            <div class="policyBox">
-                <div class="policyImg"> <img src="Images/dental-care 1.png" alt=""></div>
-                <div>
-                    <span>Genuine hands on testing </span>
-                    <p>We personally purchase every product and
-                        test it ourselves. We go to great lengths and expense to ensure we do not have to receive free
-                        samples from brands.</p>
-                </div>
-            </div>
-            <div class="policyBox">
-                <div class="policyImg"> <img src="Images/dentist 1.png" alt=""></div>
-                <div>
-                    <span>Expert contributions </span>
-                    <p> We personally purchase every product and
-                        test it ourselves. We go to great lengths
-                        and expense to ensure we do not have to 
-                        receive free samples from brands.</p>
-                       
-                </div>
-            </div>
-            <div class="policyBox">
-                <div class="policyImg"> <img src="Images/dollar 1.png" alt=""></div>
-                <div>
-                    <span>Unbiased monetisation </span>
-                    <p>We personally purchase every product and
-                        test it ourselves. We go to great lengths
-                     and expense to ensure we do not have to receive free
-                        samples from brands.</p>
-                </div>
-            </div>
+    <!-- carousel2 Section -->
+    <section class="carousel2">
+        <div class="container">
+            <h2>We’ ve kept people smiling </h2>
     
-        </div>
-        <div class="policybtn">
-            <button class="btnlearn">Learn More</button>
+            <div class="carousel-2 owl-carousel  owl-theme">
+                <div class="card">
+                    <img class="swiperImg" src="Images/slider1.png" alt="">
+                    <div class="card-content">
+                        <div class="card-detail">
+                            <div class="card-detailIcon">
+                                <img c src="Images/Icon.png" alt="">
+                            </div>
+    
+                            <span>Shonda Glenn</span>
+                            <p>Ponam in culpa idiota aliis pravitatis. Principium ponere culpam in se justum praeceptum.
+                                Neque improperes et aliis qui non perfecte</p>
+                            <div class="peopleDetailIcons">
+                                <i class="fa-solid fa-star custom-icon"></i>
+                                <i class="fa-solid fa-star custom-icon"></i>
+                                <i class="fa-solid fa-star custom-icon"></i>
+                                <i class="fa-solid fa-star custom-icon"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img class="swiperImg" src="Images/slider1.png" alt="">
+                    <div class="card-content">
+                        <div class="card-detail">
+                            <div class="card-detailIcon">
+                                <img c src="Images/Icon.png" alt="">
+                            </div>
+    
+                            <span>Shonda Glenn</span>
+                            <p>Ponam in culpa idiota aliis pravitatis. Principium ponere culpam in se justum praeceptum.
+                                Neque improperes et aliis qui non perfecte</p>
+                            <div class="peopleDetailIcons">
+                                <i class="fa-solid fa-star custom-icon"></i>
+                                <i class="fa-solid fa-star custom-icon"></i>
+                                <i class="fa-solid fa-star custom-icon"></i>
+                                <i class="fa-solid fa-star custom-icon"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img class="swiperImg" src="Images/slider1.png" alt="">
+                    <div class="card-content">
+                        <div class="card-detail">
+                            <div class="card-detailIcon">
+                                <img c src="Images/Icon.png" alt="">
+                            </div>
+    
+                            <span>Shonda Glenn</span>
+                            <p>Ponam in culpa idiota aliis pravitatis. Principium ponere culpam in se justum praeceptum.
+                                Neque improperes et aliis qui non perfecte</p>
+                            <div class="peopleDetailIcons">
+                                <i class="fa-solid fa-star custom-icon"></i>
+                                <i class="fa-solid fa-star custom-icon"></i>
+                                <i class="fa-solid fa-star custom-icon"></i>
+                                <i class="fa-solid fa-star custom-icon"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>         
+            </div>
         </div>
     </section>
 
-    <!-- Featured guides  -->
-    <section class="featured">
-        <h2>Featured guides</h2>
-        <div class="featured-content">
-            <div class="featuredleft">
-                <div class="featuredBox">
-                    <div class="featuredDetail">
-                        <span>Electric vs manual toothbrush </span>
-                        <p>
-                            Post votum promissa memini cuius adeptione cupis;
-                            quem pollicitus est aversione aversi et fuga. Qui autem de
-                        </p>
+    <!-- Review Section -->
+    <section class="review">
+        <div class="container">
+            <div class="review-content">
+                    <div class="review-box1">
+                        <div class="reviewImage">
+                            <img src="Images/Video.png" alt="">
+                        </div>
+                        <div class="reviewDetail">
+                            <h2>Watch our review of
+                                the oral-b genius x</h2>
+                            <p>We’re on YouTube! Head over there to watch our
+                                reviews and subscribe to never miss a video!</p>
+                            <div class="reviewBtn">
+                                <button class="btnWatch">Watch Video</button>
+                            </div>
+                        </div>
+    
                     </div>
-                    <div class="featuredImg">
-                        <img src="Images/Rectangle 11.png" alt="">
+                    <div class="review-box2">
+                        <span class="review-title">Join our YouTube community</span>
+                        <div class="reviewComm">
+                            <div class="revieWatch">
+                                <b>500 +</b>
+                                <p>Product videos</p>
+                            </div>
+                            <div class="revieWatch">
+                                <b>85 000 +</b>
+                                <p>Subscribers</p>
+                            </div>
+                            <div class="revieWatch">
+                                <b>150</b>
+                                <p>Million views</p>
+                            </div>
+                            
+                        </div>
+                        <div>
+                            <button class="btnWatch">Watch our videos</button>
+                        </div>
+                    </div>
+    
+    
+                   
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Section -->
+    <section class="treatment">
+        <div class="container">
+
+            <div class="treatmentTitle">
+                <h2>Dental a-z</h2>
+                <p>Learn about common dental conditions & treatments</p>
+            </div>
+            <div class="content">
+
+                <div class="treatment-boxs">    
+                    <div class="treatmentBox">
+                        <span>Invisalign</span>
+                    </div>
+                    <div class="treatmentBox">
+                        <span>Invisalign</span>
+                    </div>
+                    <div class="treatmentBox">
+                        <span>Invisalign</span>
+                    </div>
+                    <div class="treatmentBox">
+                        <span>Invisalign</span>
+                    </div>
+                    <div class="treatmentBox">
+                        <span>Invisalign</span>
+                    </div>
+                    <div class="treatmentBox">
+                        <span>Invisalign</span>
+                    </div>
+                </div>
+                  <div class="btntreatment"><Button>View all</Button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contect Section -->
+    <section class="contect">
+        <div class="container">
+
+            <div class="contect-content">
+                <div class="conentImg">
+                    <img src="Images/Ellipse 8.png" alt="">
+                </div>
+                
+                <div class="contact-data">
+                    <div class="conentLogo">
+                        <img src="Images/logo1.png" alt="">
+                    </div>
+                    <div class="conentDetail">
+                        <span>Never neglect your teeth again. Sign up to our
+                            newsletter today for honest advice and transparent reviews</span>
+                    </div>
+                    <div class="custom-input-field">
+                        <input type="email" placeholder="Enter email">
+                        <button class="btnsign">Sign up</button>
                     </div>
                 </div>
                 
-                 <div class="featuredBox">
-                    <div class="featuredDetail">
-                        <span>Dental crowns </span>
-                        <p>
-                            Tanta petere igitur, ne sineres memini fieri etiam aliquam inclinationem ad consequendum minima. Instead, oportet omnino quieti de rebus dialecticis
-                        </p>
-                    </div>
-                    <div class="featuredImg">
-                        <img src="Images/red.png" alt="">
-                    </div>
-                 </div>
-           
-              
-            </div>
-            <div class="featuredRight">
-                <div class="featuredDetailright">
-                    <div class="featuredImgbackg">
-                        <!-- <img src="Images/backg.png" alt=""> -->
-                        <div class="featuredPar">
-                            <span>Dental implants </span>
-                            <p>
-                                Tollere odium autem in nostra potestate sint, ab omnibus et contra naturam transferre in nobis. Sed interim toto desiderio supprimunt: si vis aliqua quae in manu tua tibi necesse confundentur et quae, quod laudabile esset, nihil tamen possides.
-                            </p>
-                        </div>
-                    
-                    <img class="featuredDetailLogo" src="Images/logo.png" alt="">
-                   
-                        <div class="featuredTeeth">
-                            <img class="featuredImg" src="Images/rec1.png" alt="">
-                       
-                    </div>
-                </div>
-            </div>
-           
-        </div>
-        
-    </div>
-        <button class="btnView">View</button>
-    </section>
-
-    <!-- slider2 -->
-    <section class="slider2">
-
-        <h2>We’ ve kept people smiling </h2>
-        <div class="swiper mySwiper swiper2">
-
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="latestImg">
-                        <img class="swiperImg" src="Images/slider1.png" alt="">
-                    </div>
-                    <div class="PeopleDetail">
-                        <img class="peopleDetailIcon" src="Images/Icon.png" alt="">
-
-                        <span>Shonda Glenn</span>
-                        <p>Ponam in culpa idiota aliis pravitatis. Principium ponere culpam in se justum praeceptum.
-                            Neque improperes et aliis qui non perfecte</p>
-                        <div class="peopleDetailIcons">
-                            <i class="fa-solid fa-star custom-icon"></i>
-                            <i class="fa-solid fa-star custom-icon"></i>
-                            <i class="fa-solid fa-star custom-icon"></i>
-                            <i class="fa-solid fa-star custom-icon"></i>
-                            <span>4.9</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="latestImg">
-                        <img class="swiperImg" src="Images/Rectangle 17.png" alt="">
-                    </div>
-                    <div class="PeopleDetail">
-                        <img class="peopleDetailIcon" src="Images/Icon.png" alt="">
-                        <span>Joella Edwards</span>
-                        <p>Ponam in culpa idiota aliis pravitatis.
-                            Principium ponere culpam</p>
-                        <div class="peopleDetailIcons">
-                            <i class="fa-solid fa-star custom-icon"></i>
-                            <i class="fa-solid fa-star custom-icon"></i>
-                            <i class="fa-solid fa-star custom-icon"></i>
-                            <i class="fa-solid fa-star custom-icon"></i>
-                            <span>4.9</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="latestImg">
-                        <img class="swiperImg" src="Images/Rectangle 19.png" alt="">
-                    </div>
-                    <div class="PeopleDetail">
-                        <img class="peopleDetailIcon" src="Images/Icon.png" alt="">
-                        <span>Matthew Grant</span>
-                        <p>Ponam in culpa idiota aliis pravitatis.
-                            Principium ponere culpam in se justum praeceptum. </p>
-                        <div class="peopleDetailIcons">
-                            <i class="fa-solid fa-star custom-icon"></i>
-                            <i class="fa-solid fa-star custom-icon"></i>
-                            <i class="fa-solid fa-star custom-icon"></i>
-                            <i class="fa-solid fa-star custom-icon"></i>
-                            <span>4.9</span>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="swiper-button-next button-next"></div>
-            <div class="swiper-button-prev button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-    <!-- Review -->
-    <section class="review">
-        <div class="review-content">
-            <div class="reviewImage">
-                <img src="Images/Video.png" alt="">
-            </div>
-            <div class="reviewDetail">
-                <h2>Watch our review of
-                    the oral-b genius x</h2>
-                <p>We’re on YouTube! Head over there to watch our
-                    reviews and subscribe to never miss a video!</p>
-                <div class="reviewBtn">
-                    <button class="btnWatch">Watch Video</button>
-                </div>
-            </div>
-            <div class="reviewComm">
-                <span>Join our YouTube community</span>
-                <div class="revieWatch">
-                    <b>500 +</b>
-                    <p>Product videos</p>
-                </div>
-                <div class="revieWatch">
-                    <b>85 000 +</b>
-                    <p>Subscribers</p>
-                </div>
-                <div class="revieWatch">
-                    <b>150</b>
-                    <p>Million views</p>
-                </div>
-                <div>
-                    <button class="btnWatch">Watch our videos</button>
-                </div>
+               
             </div>
         </div>
     </section>
 
-    <!-- treatment -->
-    <section class="treatment">
-        <h2>Dental a-z</h2>
-        <p>Learn about common dental conditions & treatments</p>
-        <div class="treatment-content">
-            <div class="treatmentImg"></div>
-
-            <div class="treatmentBox">
-                <p class="treatmentDetail">Invisalign</p>
-            </div>
-            <div class="treatmentBox">
-                <p class="treatmentDetail">Teeth strightening / Braces</p>
-            </div>
-            <div class="treatmentBox">
-                <p class="treatmentDetail">Veneers</p>
-            </div>
-            <div class="treatmentBox">
-                <p class="treatmentDetail">Root canal </p>
-            </div>
-            <div class="treatmentBox">
-                <p class="treatmentDetail">Crowns</p>
-            </div>
-            <div class="treatmentbtn">
-                <button class="btnAll">View all</button>
-            </div>
-            <div class="treatmenthandImg">
-                <img src="Images/ee.png" alt="">
-            </div>
-
-        </div>
-    </section>
-
-    <section class="contect">
-        <div class="contect-content">
-            <div class="conentImg">
-                <img src="Images/Ellipse 8.png" alt="">
-            </div>
-            <div class="conentLogo">
-                <img src="Images/logo1.png" alt="">
-            </div>
-            <div class="conentDetail">
-                <span>Never neglect your teeth again. Sign up to our
-                    newsletter today for honest advice and transparent reviews</span>
-            </div>
-            <div class="conentForm">
-                <input type="email" placeholder="Enter email">
-                <butto class="btnsign">Sign up</button>
-            </div>
-        </div>
-    </section>
-
+    <!-- Footer Section -->
     <footer class="footer">
-        <span class="footer-content">Footer</span>
+        <div class="container">
+
+            <span class="footer-content">Footer</span>
+        </div>
     </footer>
 
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Script -->
     <script type="text/javascript">
         
@@ -636,3 +650,47 @@
 </body>
 
 </html>
+
+<script>
+$('.carousel-1').owlCarousel({
+    loop:false,
+    margin:16,
+    responsiveClass:true,
+    nav:true,
+    loop:false,
+    dots:true,
+    
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:4,
+        }
+    }
+}) </script>
+
+<script>
+    $('.carousel-2').owlCarousel({
+        loop:false,
+        margin:16,
+        responsiveClass:true,
+        nav:true,
+        loop:false,
+        dots:true,
+        
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:3,
+            },
+            1000:{
+                items:3,
+            }
+        }
+    }) </script>
