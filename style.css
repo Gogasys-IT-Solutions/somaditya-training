@@ -262,12 +262,41 @@ i.fa-solid.fa-check.newIcon:hover {
 }
 
 /* Product section */
-
+section.product {
+    position: relative;
+    padding: 20px 0px 50px 0px;
+}
+.product-card.full-card {
+    position: relative;  
+}
+.productheading {
+  display: flex;
+  height: 100%;
+}
+.product-text-detail {
+  width: 100%;
+  min-width: 420px;
+  padding: 8rem 0rem 0 3rem;
+}
+.productcardImage {
+  width: 100%;
+  display: flex;
+}
+img.productcardimg {
+  width: 100%;
+  object-fit: cover;
+  min-width: fit-content;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.Productlogo {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+}
 .product-card {
-  /* display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 325px; */
+  
   background: #e6f2fe;
 }
 
@@ -278,19 +307,8 @@ h3.heading {
   font-weight: 700;
 }
 
-section.product {
-  position: relative;
-  padding: 20px 0px 50px 0px;
-}
-.productLeft {
-  width: 100%;
-  max-width: 624px;
-  background-image: url("Images/Rectangle 3.png");
-  background-repeat: no-repeat;
-  background-color: #e6f2fe;
-  background-position: bottom right;
-  background-size: cover;
-}
+
+
 .product-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -345,10 +363,7 @@ button.btnView {
   border: 1px solid;
   margin-top: 24px;
 }
-.productTitle {
-  display: block;
-  text-align: center;
-}
+
 /* Services Section */
 
 .ServiceMain {
