@@ -1,66 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-@media screen and (min-width: 1190px) {
-  .container {
-    max-width: 1170px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,500;1,6..12,600&family=Poppins:wght@900&family=Pridi:wght@600;700&display=swap');
+@media screen and (min-width:576px) and (max-width: 968px) {
+  .featured-content {
+    flex-direction: column;
 }
-@media screen and  (max-width:320px){
-  /* .servicesItems3 {
-    width: 112px;
-    height: 112px;
-    background: #00dca8;
-    text-decoration: underline;
-    color: #215273;
-    border-radius: 65%;
-    text-align: center;
-    padding: 29px 3px;
-    position: absolute;
-    top: 64px;
-    left: 200px;
-} */
-.custom-input-field {
-  position: relative;
-  width: 222px;
 }
 
-}
-
-@media screen and  (min-width: 320px) and (max-width: 640px) {
+@media screen and (min-width: 320px) and (max-width: 575px) {
   header {
     background: #e6f2fe;
     position: sticky;
     top: 0;
     z-index: 9;
-}
+  }
   .hero-Heading {
     font-size: 44px;
     font-weight: 700;
+    line-height: 42px;
+    font-family: Peachi;
+}
+  /* img.featuredDetailLogo {
+    width: 100%;
+    position: unset;
+  } */
 
+  h3.heading {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Peachi;
 }
-img.featuredDetailLogo {
-  width: 100%;
-  position: unset;
+  p.descripation {
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    color: #215273;
+    line-height: 28px;
+    font-weight: 400;
+    margin-top: 20px;
 }
- 
-
-h3.heading {
-  font-size: 24px;
-  font-weight: 700;
-}
-p.descripation {
-  font-family: 'Nunito Sans';
-  font-size: 16px;
-  color: #215273;
-  line-height: 28px;
-  font-weight: 400;
-}
- 
   .left-paragraph {
     padding: 0;
     font-size: 16px;
     font-weight: 400;
+    color: #215273;
+    line-height: 26px;
+    font-family: 'Nunito Sans';
+    margin-top: 20px;
 }
-
 
   /* header section */
   .main-nav {
@@ -107,59 +91,59 @@ p.descripation {
 
   .hero-content {
     background-size: auto;
-    background-position: bottom -40px  right;
+    background-position: bottom -40px right;
     overflow: hidden;
     width: 100%;
-}
+  }
   .hero-detail p span {
     color: #2285e7;
     text-decoration: underline;
-}
+  }
 
-.hero-detail p {
-  font-size: 16px;
-  font-weight: 600;
-  width: 100%;
-  max-width: 247px;
-}
-.hero-detail button {
-  padding: 12px 28px 12px 28px;
-  cursor: pointer;
-}
+  .hero-detail p {
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    max-width: 247px;
+  }
+  .hero-detail button {
+    padding: 12px 28px 12px 28px;
+    cursor: pointer;
+  }
 
-.hero-RightDiv {
+  .hero-RightDiv {
     position: absolute;
     top: 293px;
     bottom: 0;
     left: 40%;
-}
+  }
 
-.hero-RightDiv .right-content {
+  .hero-RightDiv .right-content {
     width: 223px;
     height: 283px;
-}
+  }
 
   /* Detail section */
-section.deatail {
+  section.deatail {
     background: #b1d4f7;
-}
+  }
 
-.detail-content {
-  flex-direction: column;
-  align-items: start;
-  padding: 2rem 0;
-}
+  .detail-content {
+    flex-direction: column;
+    align-items: start;
+    padding: 2rem 0;
+  }
 
   .dettailBox {
     align-items: baseline;
   }
-
   .detail-content p {
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #215273;
+    margin: 0;
 }
-
-  
-
   .detail-content .right-content img {
     width: 100%;
   }
@@ -185,10 +169,6 @@ section.deatail {
     color: white;
     padding: 10px 12px 10px 12px;
     font-size: 12px;
-}
-
-  .detail-content .dettailBox p {
-    white-space: nowrap;
   }
 
   /*  Product Section*/
@@ -197,25 +177,41 @@ section.deatail {
     flex-direction: column;
     gap: 17px;
     display: flex;
+  }
+  .productTitle {
+    text-align: center;
 }
-.productcad-main {
-  width: 100%;
-  height: 260px;
+  h2.heading {
+  font-family: Peachi;
+  font-size: 32px;
+  font-weight: 700;
 }
-.Productlogo {
-  position: absolute;
-  top: 80%;
-  left: 16%;
+.product-card.full-card {
+  background-position: bottom;
+  background-size: cover;
 }
-.productcardImage {
-  position: absolute;
-  top: 100%;
-  left: -16px;
-  z-index: 0;
+  .productcad-main {
+    width: 100%;
+    height: 260px;
+  }
+  img.productcardimg {
+    width: 307px;
 }
-img.productcardimg {
-  width: 0;
-  /* z-index: -24; */
+
+  .Productlogo {
+    left: 20px;
+    bottom: 20px;
+  }
+  /* .productcardImage {
+    position: absolute;
+    top: 100%;
+    left: 8px;
+    z-index: 0;
+  } */
+  img.productcardimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
   .productLeftImg {
@@ -227,18 +223,14 @@ img.productcardimg {
     z-index: 9999;
   }
   .product-text-detail {
-    position: absolute;
-    top: 15%;
-    left: 8%;
-    width: 60%;
-    min-width: 200px;
-    padding: 0;
+    padding: 19px 0 0px 20px;
+    min-width: 250px;
 }
 
   .productRight {
-    width: 100%;
-    gap: 0;
-  }
+    display: grid;
+    gap: 15px;
+}
 
   .btnView {
     display: block;
@@ -254,14 +246,13 @@ img.productcardimg {
   /* Services Section */
   section.services {
     background-color: #e6f2fe;
-    /* padding: 16px 16px; */
     position: relative;
     flex-direction: column;
   }
 
   .services {
     flex-direction: column-reverse;
-}
+  }
 
   .servicesTitle {
     margin: 0;
@@ -273,116 +264,90 @@ img.productcardimg {
   }
 
   .servicesItems {
-    position: absolute;
-    cursor: pointer;
-    top: 10px;
-    left: -20px;
     width: 144px;
     height: 144px;
-    background: #00dca8;
-    text-decoration: underline;
-    color: #215273;
-    border-radius: 65%;
-    text-align: center;
-    padding: 23px 3px;
-}
+    padding: 5px;
+    left: -9px;
+    top: -93px;
+  }
 
-.servicesItems2 {
-  width: 104px;
-  height: 104px;
-  background: #00dca8;
-  text-decoration: underline;
-  color: #215273;
-  font-size: 20px;
-  border-radius: 65%;
-  text-align: center;
-  padding: 19px 1px;
-  position: absolute;
-  left: 0px;
-  top: 52%;
-}
+  .servicesItems2 {
+    width: 104px;
+    height: 104px;
+  }
 
-.servicesItems3 {
-  width: 112px;
-  height: 112px;
-  background: #00dca8;
-  text-decoration: underline;
-  color: #215273;
-  border-radius: 65%;
-  text-align: center;
-  padding: 29px 3px;
-  position: absolute;
-  top: 64px;
-  left: 234px;
-}
+  .servicesItems3 {
+    width: 112px;
+    height: 112px;
+    top: 22px;
+    right: 0;
+    padding: 8px;
+  }
   span.servicesitemsText {
     font-size: 20px;
     font-weight: 700;
-}
+  }
 
   /* Main Section */
-  section.mainProduct {
-    position: relative;
-  }
 
   .mainProduct-content {
     margin: 30px 0;
     flex-direction: column;
-   
   }
 
   .mainProductBox {
     margin-bottom: 12px;
     width: 100%;
     max-width: 100%;
+    position: relative;
+  }
+  .mainProductBox img {
+    height: 120px;
+    width: 120px;
+    float: right;
+  }
+  .pink-bg {
+    background: #ffd3e2;
 }
-.mainProductBox img {
-  height: 120px;
-  width: 120px;
-  float: right;
+.pink2-bg {
+  background: #fac5cb;
 }
-.pink-bg {
-  background: #f9c4ca;
+.blue2-bg {
+  background: #66bcf2;
 }
-.blue-bg {
-  background: #76c9e7;
+  .blue-bg {
+    background: #9edced;
 }
 .green-bg {
-  background: #a7e2c7;
+  background: #b2ead4;
 }
 span.mainproductText {
   position: absolute;
-  top: 30%;
-  left: 12%;
-  color: white;
+  bottom: 37%;
+  left: 10%;
 }
 span.mainproductText2 {
   position: absolute;
-  top: 44%;
+  bottom: 37%;
   left: 10%;
-  color: white;
+
 }
 span.mainproductText3 {
   position: absolute;
-  top: 57%;
+  bottom: 37%;
   left: 10%;
-  color: white;
 }
 span.mainproductText4 {
   position: absolute;
-  top: 70%;
+  bottom: 37%;
   left: 10%;
-  color: white;
 }
 span.mainproductText5 {
   position: absolute;
-  top: 85%;
+  bottom: 37%;
   left: 10%;
-  color: white;
 }
-
- 
-  .mainProduct .btnShow {
+.mainProduct .btnShow {
     line-height: 20px;
     text-align: center;
     padding: 12px 28px 12px 28px;
@@ -390,7 +355,6 @@ span.mainproductText5 {
     border: 1px solid black;
     font-weight: 700;
   }
-
 
   /* Latest Section */
 
@@ -500,7 +464,7 @@ span.mainproductText5 {
   }
   .featured-content {
     flex-direction: column;
-}
+  }
 
   .featuredBox {
     display: flex;
@@ -508,43 +472,36 @@ span.mainproductText5 {
     background: #e6f2fe;
     margin: 30px 0;
   }
-
-  .featuredDetail {
-    text-align: start;
-    padding: 16px;
-  }
-
-  img.featuredImg {
-    position: absolute;
-    left: 179px;
-    bottom: 9%;
-  }
-
-  img.featuredDetailLogo {
-    margin: 30px 0;
-  }
-  img.featuredDetailLogo {
-    margin-bottom: 20px;
+  .featuredRightheading {
+    display: flex;
+    align-items: center;
+    height: 325px;
 }
-  .slider2 {
-    position: relative;
-  }
+.featuredRight-text-detail {
+  width: 100%;
+  height: 100%;
+  min-width: 300px;
+  padding: 2rem 0rem 0 1rem;
+  text-align: start;
+}
+.featuredRightlogo {
+  position: absolute;
+  bottom: 105px;
+  left: 27px;
+}
+.featuredRight {
+  
+  background-position: bottom right -27px;
+  background-size: cover;
+}
 
-  .swiper2 {
-    width: 345px;
-    height: 480px;
-    margin-top: 40px;
-  }
-
+  
+/* Latest Section */
   section.LatestPosts {
     display: flex;
     justify-content: space-between;
     gap: 35px;
   }
-
-  /* .swiper2 .swiper-pagination {
-  margin: 30px 0px;
-} */
 
   .PeopleDetail {
     width: 85%;
@@ -577,7 +534,7 @@ span.mainproductText5 {
     float: left;
     padding: 10px 19px;
   }
-
+/* Review section */
   .review {
     margin-top: 58px;
     background-color: #e6f2fe;
@@ -593,9 +550,8 @@ span.mainproductText5 {
     margin-top: 30px;
   }
 
+  
   .review .reviewBtn .btnWatch {
-    width: 141px;
-    height: 50px;
     line-height: 20px;
     text-align: center;
     padding: 12px 28px 12px 28px;
@@ -604,7 +560,7 @@ span.mainproductText5 {
     color: #215273;
     border: 1px solid black;
     font-weight: 700;
-  }
+}
 
   .review .reviewComm p {
     font-size: 20px;
@@ -672,6 +628,7 @@ span.mainproductText5 {
     width: 118px;
     height: 50px;
   }
+  
 
   .treatment-content {
     margin: 38px 0px;
